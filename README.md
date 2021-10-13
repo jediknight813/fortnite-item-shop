@@ -1,4 +1,4 @@
-a website that display the current and future items in the fortnite item shop, i made it to learn how to use apis better.
+a website that display the current and future items in the fortnite item shop, i made it to learn how to use Api calls better.
 
 link to the website: 
 
