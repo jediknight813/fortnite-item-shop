@@ -6,7 +6,7 @@ import Header from './Components/header';
 import NavBar from './Components/navBar'
 import CurrentItems from './Components/getCurrentItems';
 import GetPopularItems from './Components/getPopularItems'
-
+import Footer from './Components/footer'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -18,6 +18,7 @@ ReactDOM.render(
       <Route path="/currentItems" exact component={CurrentItems} />
       <Route path="/upcomingItems" exact component={UpComingItems} />
       <Route path="/GetAllItems" exact component={GetPopularItems} />
+      <Footer />
     </div>
     </Router>
   </React.StrictMode>,
