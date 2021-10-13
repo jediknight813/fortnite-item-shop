@@ -1,0 +1,38 @@
+.header {
+    width: 110%;
+    height: 12%;
+    background-color: rgb(78, 127, 233);
+    top: 0%;
+    right: 0%;
+    position: absolute;
+}
+
+.header_text {
+    font-family: cursive;
+    top: -20%;
+    color: white;
+    position: absolute;
+    right: 40.5%;
+}
+
+.navBar {
+    position: absolute;
+    display: grid;
+    grid-template: repeat(99, 1fr) / repeat(4, 1fr);
+    width: 80%;
+    height: 40%;
+    right: -3.7%;
+    top: 3%;
+}
+
+.navBarText {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: cursive;
+    text-decoration: none;
+    
+}
+
+.Link {
+    text-decoration: none;
+}

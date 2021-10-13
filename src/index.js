@@ -1,17 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import UpComingItems from './Components/upComingItems';
+import Header from './Components/header';
+import NavBar from './Components/navBar'
+import CurrentItems from './Components/getCurrentItems';
+import GetPopularItems from './Components/getPopularItems'
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+    <div>
+      <Header />
+      <NavBar />
+      <Route path="/" exact component={CurrentItems} />
+      <Route path="/currentItems" exact component={CurrentItems} />
+      <Route path="/upcomingItems" exact component={UpComingItems} />
+      <Route path="/GetAllItems" exact component={GetPopularItems} />
+    </div>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

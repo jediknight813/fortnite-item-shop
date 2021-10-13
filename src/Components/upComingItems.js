@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
+import './item-styles.css';
 
 
-function App() {
+function UpComingItems() {
 
   const [items, setItems] = useState([]);
 
@@ -17,11 +18,11 @@ const fetchItems = async () => {
 }
 
   return (
-    <div>
+    <div className="item_grid">
       {items.map(items => (
-        <div>
-          <img src={items.item.images.icon} />
-          <h1>
+        <div className={items.item.rarity}>
+          <img className="item_image" alt={items.item.name} src={items.item.images.icon} />
+          <h1 className="item_text">
             {items.item.name}
           </h1> 
         </div>  
@@ -30,4 +31,4 @@ const fetchItems = async () => {
   );
 }
 
-export default App;
+export default UpComingItems;
