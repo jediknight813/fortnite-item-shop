@@ -25,20 +25,25 @@
 
 .legendary {
     background-color: rgb(238, 144, 29);
+    border-radius: 20px;
 }
 
 .epic {
     background-color: rgb(135, 13, 135);
+    border-radius: 20px;
 }
 
 .uncommon {
     background-color: grey;
+    border-radius: 20px;
 }
 
 .common {
     background-color: greenyellow;
+    border-radius: 20px;
 }
 
 .rare {
     background-color: rgb(62, 130, 233);
+    border-radius: 20px;
 }
